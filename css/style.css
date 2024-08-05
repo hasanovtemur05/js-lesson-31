@@ -190,9 +190,158 @@ button {
   background-color: #164038;
   padding: 32px 10px 10px 32px;
   border-radius: 4px;
+  display: grid;
 }
 .xref__card__name {
   margin-top: 100px;
   font-size: 22px;
   color: white;
+}
+.xref__card__box {
+  display: flex;
+  gap: 5px;
+}
+.xref__card__title {
+  font-size: 30px;
+}
+.xref__card .n1 {
+  color: #E1FFA0;
+}
+.xref__card .n2 {
+  color: white;
+}
+.xref__card__desc {
+  color: white;
+}
+.xref #card2 {
+  font-size: 12px;
+  padding: 5px 10px;
+  background-color: #E1FFA0;
+  color: #164038;
+  border-radius: 5px;
+}
+.xref #card1 {
+  font-size: 12px;
+  padding: 5px 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 5px;
+}
+
+.platform {
+  margin-top: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.platform__name {
+  font-size: 22px;
+  color: #333333;
+}
+.platform__title {
+  font-size: 40px;
+  color: #333333;
+  padding: 15px 0px 25px 0px;
+}
+.platform__cards {
+  height: 550px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 80px;
+}
+.platform__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.platform__card__title {
+  font-size: 22px;
+  color: #0C2520;
+}
+.platform__card__desc {
+  font-size: 15px;
+  color: #0C2520;
+  text-align: center;
+}
+.platform__card__link {
+  font-size: 16px;
+  color: #164038;
+}
+.platform__box {
+  width: 100%;
+  height: 445px;
+  background-color: #164038;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+.platform__box__left {
+  height: 100%;
+  width: 45%;
+  padding-left: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.platform__box__left__name {
+  color: white;
+  font-size: 22px;
+}
+.platform__box__left__title {
+  font-size: 40px;
+  color: white;
+}
+.platform__box__left__desc {
+  color: white;
+}
+.platform__box__left__btn {
+  width: 130px;
+  color: #0C2520;
+  padding: 16px 25px;
+  border-radius: 100px;
+  border: none;
+  background-color: #E1FFA0;
+  transition: 0.3s;
+}
+.platform__box__left__btn:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 10px gray;
+}
+.platform__cards2 {
+  width: 100%;
+  height: 255px;
+  margin-top: 35px;
+  display: flex;
+  gap: 35px;
+}
+.platform__card2 {
+  height: 100%;
+  width: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.1019607843);
+  border-radius: 4px;
+  padding: 100px 70px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: 0.4s;
+}
+.platform__card2:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 10px gray;
+}
+.platform__card2__title {
+  font-size: 22px;
+  color: #0C2520;
+}
+.platform__card2__desc {
+  color: #0C2520;
+  line-height: 22px;
+}
+.platform__card2__link {
+  font-size: 14px;
+  color: #164038;
 }
