@@ -21,12 +21,17 @@ button {
   cursor: pointer;
 }
 
+a {
+  cursor: pointer;
+}
+
 .header {
   height: 80px;
   background-color: white;
   position: sticky;
   left: 0;
   top: 0;
+  z-index: 99;
 }
 .header__nav {
   height: 100%;
@@ -344,4 +349,218 @@ button {
 .platform__card2__link {
   font-size: 14px;
   color: #164038;
+}
+
+.teams {
+  margin-top: 140px;
+}
+.teams__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+.teams__name {
+  color: #333333;
+  font-size: 22px;
+  padding: 0px 0px 14px 0px;
+}
+.teams__title {
+  font-size: 44px;
+  color: #333333;
+  padding: 0px 0px 52px 0px;
+}
+.teams__desc {
+  font-size: 18px;
+  color: #333333;
+  padding: 0px 0px 22px 0px;
+}
+.teams__link {
+  font-size: 16px;
+  color: #164038;
+  padding: 0px 0px 30px 0px;
+}
+.teams__about {
+  width: 100%;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.teams__about__box {
+  display: flex;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1019607843);
+  justify-content: space-between;
+  align-items: center;
+}
+.teams__about__box p {
+  font-size: 18px;
+  color: #164038;
+}
+.teams__about__box .box {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(12, 37, 32, 0.0980392157);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.teams__about__box .box:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 10px gray;
+}
+
+.customer {
+  margin-top: 170px;
+  height: auto;
+}
+.customer__name {
+  font-size: 22px;
+  color: #333333;
+  text-align: center;
+}
+.customer__title {
+  font-size: 40px;
+  color: #333333;
+  text-align: center;
+  padding: 15px 0px 50px 0px;
+}
+.customer__grid {
+  width: 100%;
+  height: 400px;
+  display: grid;
+  gap: 34px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.customer__grid__item {
+  height: 328px;
+  background-color: #0C2520;
+  transition: 0.4s;
+}
+.customer__grid__item:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 10px rgb(105, 105, 105);
+}
+.customer__grid .item4 {
+  grid-column: 1/span 2;
+  background-color: #164038;
+  padding: 35px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.customer__grid .item4 .right {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 65px;
+  border-left: 2px solid rgba(232, 232, 232, 0.3019607843);
+  gap: 20px;
+}
+.customer__grid .item4 .right__title {
+  font-size: 80px;
+  color: white;
+}
+.customer__grid .item4 .right__desc {
+  color: white;
+  font-size: 18px;
+}
+.customer__grid .item4 .left {
+  padding: 0px 65px 0px 0px;
+}
+.customer__grid .item4 .left__title {
+  font-size: 34px;
+  color: white;
+}
+.customer__grid .item4 .left__desc {
+  font-size: 18px;
+  color: white;
+  padding: 50px 0px;
+}
+.customer__grid .item4 .left__link {
+  color: #E1FFA0;
+}
+.customer__grid__title {
+  color: white;
+  font-size: 26px;
+}
+.customer__grid__link {
+  color: #32735F;
+  font-size: 16px;
+  padding-top: 20px;
+}
+.customer__grid .item5 {
+  padding: 49px 33px;
+}
+.customer__grid #box {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+.customer__grid #box:nth-child(3) {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.customer__grid #box:nth-child(3) p {
+  color: white;
+}
+.customer .item1 {
+  padding: 180px 32px 35px 32px;
+}
+
+.footer {
+  width: 100%;
+  height: 1200px;
+  background-color: #164038;
+  margin-top: 450px;
+  padding: 140px 0px 0px 0px;
+}
+.footer__title {
+  text-align: center;
+  color: white;
+  font-size: 62px;
+}
+.footer__title span {
+  color: #E1FFA0;
+}
+.footer__desc {
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+.footer__name {
+  padding: 30px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+.footer__cards {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 30px;
+  margin-top: 100px;
+}
+.footer__card {
+  display: grid;
+}
+.footer__item {
+  font-size: 18px;
+  color: white;
+  padding-bottom: 60px;
+}
+.footer__link {
+  color: white;
+  padding-bottom: 10px;
+}
+.footer__bottom {
+  height: 50px;
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: white;
 }
